@@ -34,7 +34,7 @@ const Header = () => {
       </div>
 
       {isOpen && (
-        <div className="absolute top-0 bg-[#171717] h-screen w-full z-10 left-0 flex flex-col items-center pt-[10.5rem] pb-20 text-xl">
+        <div className="absolute top-0 bg-[#171717] min-h-screen w-full z-10 left-0 flex flex-col items-center pt-[10.5rem] pb-20 text-xl">
           <ul className="flex flex-col gap-2 italic text-[#C5c5c5] h-full">
             <li>
               <Link href="/">Home</Link>
