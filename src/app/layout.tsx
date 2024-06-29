@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const belfastEbold = localFont({
+  src: "../../public/fonts/Belfast-Grotesk-Extra-Bold-Oblique.ttf",
+  variable: "--font-belfastEbold",
+  weight: "800",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} max-w-xl mx-auto bg-black text-white`}
+        className={`${inter.className} ${belfastEbold.variable} max-w-xl mx-auto bg-black text-white font-belfastEbold`}
       >
         <Header />
         {children}

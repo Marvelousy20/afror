@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        belfastEbold: ["var(--font-belfastEbold)"],
+      },
       colors: {
         grayblack: "#737373",
         border: "hsl(var(--border))",

@@ -17,6 +17,11 @@ const stories = [
     name: "Goddess",
     img: "/pretty.svg",
   },
+
+  {
+    name: "Goddess",
+    img: "/pretty.svg",
+  },
 ];
 
 const Stories = () => {
