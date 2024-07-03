@@ -1,11 +1,8 @@
 "use client";
-
-import { Input } from "../../ui/input";
-import { Button } from "../../ui/button";
-import { MdArrowForwardIos } from "react-icons/md";
 import { useState } from "react";
 import StepOne from "./StepOne";
 import StepTwo from "./StepTwo";
+import StepThree from "./StepThree";
 
 const ModelSignUp = () => {
   const [step, setStep] = useState(1);
@@ -28,6 +25,7 @@ const ModelSignUp = () => {
 
         {step === 1 && <StepOne nextStep={nextStep} />}
         {step === 2 && <StepTwo nextStep={nextStep} />}
+        {step === 3 && <StepThree nextStep = {nextStep} />}
       </form>
 
       <div className="text-center mt-[6.5rem] text-white">
