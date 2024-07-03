@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
 import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,9 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${belfastEbold.variable} max-w-xl mx-auto bg-black text-white font-belfastEbold`}
+        className={`${inter.className} ${belfastEbold.variable} max-w-xl mx-auto bg-black font-belfastEbold text-grayblack`}
       >
-        <Header />
         {children}
       </body>
     </html>

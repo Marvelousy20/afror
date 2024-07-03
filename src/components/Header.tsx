@@ -43,10 +43,14 @@ const Header = () => {
               <Link href="/">My List</Link>
             </li>
             <li>
-              <Link href="/">Login</Link>
+              <Link href="/signup" onClick={() => setOpen(false)}>
+                Login
+              </Link>
             </li>
             <li>
-              <Link href="/">Sign Up</Link>
+              <Link href="/signup" onClick={() => setOpen(false)}>
+                Sign Up
+              </Link>
             </li>
             <li>
               <Link href="/">Contact us</Link>
