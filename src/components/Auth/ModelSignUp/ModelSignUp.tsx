@@ -3,10 +3,11 @@ import { useState } from "react";
 import StepOne from "./StepOne";
 import StepTwo from "./StepTwo";
 import StepThree from "./StepThree";
+import StepFour from "./StepFour";
 
 const ModelSignUp = () => {
   const [step, setStep] = useState(1);
-  const totalSteps = 5;
+  const totalSteps = 4;
 
   const nextStep = () => {
     setStep(step + 1);
@@ -26,6 +27,8 @@ const ModelSignUp = () => {
         {step === 1 && <StepOne nextStep={nextStep} />}
         {step === 2 && <StepTwo nextStep={nextStep} />}
         {step === 3 && <StepThree nextStep = {nextStep} />}
+        {step === 4 && <StepFour />}
+
       </form>
 
       <div className="text-center mt-[6.5rem] text-white">
